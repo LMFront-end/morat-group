@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,600&display=swap');
+@import url(//db.onlinewebfonts.com/c/3a2035962fc694a93594cd49b139e6c8?family=RoperSerif);
  :root {
-    --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
-    --color-primary: #667eea7e;
-    --color-secondary: #764ba2;
+    --background: linear-gradient(135deg, #9d4edd 0%, #5a189a  100%);
+    --color-primary: #9d4edd;
+    --color-secondary: #5a189a;
     --boton-padding: 20px 40px;
 }
 
@@ -15,7 +16,7 @@ body {
     margin: 0 auto;
     /*background: red;*/
     overflow: hidden;
-    padding: 80px 0;
+    padding: 10px 0;
     max-width: 120;
 }
 
@@ -68,7 +69,8 @@ body {
     font-size: 3.2rem;
     font-weight: 300;
     margin: 15px 0;
-    color: rgb(243, 186, 43);
+    color: #fff;
+    font-family: "RoperSerif";
 }
 
 .hero__wave {
@@ -95,6 +97,8 @@ body {
     -moz-border-radius: 20%;
     -ms-border-radius: 20%;
     -o-border-radius: 20%;
+    -webkit-box-shadow: 5px 5px 7px 5px rgba(0,0,0,0.1); 
+box-shadow: 5px 5px 7px 5px rgba(0,0,0,0.1);
 }
 
 
@@ -114,14 +118,65 @@ body {
     justify-items: center;
     gap: 16px;
     place-content: center;
+    padding: 16px;
 }
 
 .morat__music iframe {
     width: 400px;
     height: 280px;
-    border-radius: 5%;
-    -webkit-border-radius: 5%;
-    -moz-border-radius: 5%;
-    -ms-border-radius: 5%;
-    -o-border-radius: 5%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
+
+#description_container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description{
+    display: flex;
+    height: 150px;
+    width: 810px;
+    background-color: #60308c;
+    border-radius: 10px;
+    color: #fff;
+
+}
+
+.description span{
+    height: 70px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: 20%;
+}
+
+#logo{
+    height: 100px;
+    width: auto;
+    color: #fff;
+    margin: 20px;
+    position: relative;
+    top: 5px;
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: #60308c;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-shadow: 0px -6px 7px 3px rgba(0,0,0,0.1); 
+box-shadow: 0px -6px 7px 3px rgba(0,0,0,0.1);
+}
+
+
+
