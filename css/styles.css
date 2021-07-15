@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,600&display=swap');
+ :root {
+    --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+    --color-primary: #667eea7e;
+    --color-secondary: #764ba2;
+    --boton-padding: 20px 40px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    /*background: red;*/
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 120;
+}
+
+
+/*Para cambiar el color de class subtitle por medio del --color-primary declarado en el :root*/
+
+.hero {
+    height: 100vh;
+    background-image: var(--background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.hero .container {
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.nav__items {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+}
+
+.hero__container {
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: #fff;
+}
+
+.hero__texts {
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.hero__title {
+    font-size: 3.2rem;
+    font-weight: 300;
+    margin: 15px 0;
+    color: rgb(243, 186, 43);
+}
+
+.hero__wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.presentation {
+    text-align: center;
+    padding-top: 0;
+}
+
+.presentation__picture {
+    width: 250px;
+    height: 250px;
+    border-radius: 20%;
+    margin-bottom: 50px;
+    object-fit: cover;
+    object-position: top;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
+
+
+/*iframe*/
+
+.morat__music {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.morat__music .container__music {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 16px;
+    place-content: center;
+}
+
+.morat__music iframe {
+    width: 400px;
+    height: 280px;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
